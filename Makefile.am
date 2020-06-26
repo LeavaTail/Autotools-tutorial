@@ -1,3 +1,4 @@
+SUBDIRS = po
 bin_PROGRAMS = test
 man_MANS = man/test.1
 test_SOURCES = src/main.c src/sub.c

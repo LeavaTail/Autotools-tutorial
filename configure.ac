@@ -6,6 +6,8 @@ AC_INIT([test], [1.0], [starbow.duster@gmail.com])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION(0.19)
 
 # Checks for programs.
 AC_PROG_CC
@@ -20,5 +22,5 @@ AC_CHECK_HEADERS([libintl.h locale.h])
 # Checks for library functions.
 AC_CHECK_FUNCS([setlocale])
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([po/Makefile.in Makefile])
 AC_OUTPUT
